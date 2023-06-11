@@ -18,8 +18,9 @@ body {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 	cursor: pointer;
+	color: inherit;
 }
 .btn {
 	transition: 0.5s;
@@ -37,12 +38,22 @@ a {
 .bounce {
 	animation: bounce 0.5s infinite ease-in-out alternate;
 }
-.fa-chevron-down {
-	z-index: 1;
-	position: absolute;
-	top: 370px;
-	color: white;
+.emot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 100px;
 }
+.arrow {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 75px;
+}
+
 .earth {
 	position: absolute;
 	font-size: 100px;
@@ -53,8 +64,6 @@ a {
 	background-color: #f892a0;
 }
 .hoverme {
-	position: absolute;
-	top: 300px;
 	color: white;
 	z-index: 1;
 	font-size: 45px;
@@ -122,7 +131,6 @@ a {
 
 #second {
 	height: 110vh;
-	/* background-color: rgb(252, 248, 248); */
 	background-color: #12100e;
 	display: flex;
 	justify-content: center;
@@ -163,9 +171,9 @@ span {
 	right: 250px;
 	font-size: 60px;
 	cursor: pointer;
+	color: white;
 }
 #third {
-	/* height: 100vh; */
 	background-color: #2b4162;
 	background-image: linear-gradient(345deg, #2b4162 0%, #12100e 74%);
 
